@@ -10,6 +10,7 @@ Prerequisites (get familiar with these, then continue)
 - [Reporting Bugs or Requesting Features](#reporting-bugs-or-requesting-features)
 - [Issue Guidelines](#issue-guidelines)
   - [What Are Issues](#what-are-issues)
+  - [Related Issues](#related-issues)
   - [Issue Structure](#issue-structure)
     - [Feature](#feature)
     - [Bug](#bug)
@@ -56,18 +57,27 @@ Follow the [pull request guidelines](#pull-request-guidelines) below to merge ch
 
 ## Issue Guidelines
 
-#### What are issues
+### What are issues
 Issues are one of the core components of a repository. It is where bugs are reported, features are requested, and questions are asked. This is a crucial step in the contribution process. To view the issues on the repository go to the **Issues** tab under the repository name.
 
 Before contribution to the project, you must figure out where to start developing. This can be done by taking a look through the issues and seeing if any catch your eye. If none do, but you have an idea for the project, you can [make your own issue](#issue-structure) for someone else to work on, or take initiative an make changes yourself. If that is the case, then follow the [contribution guidelines](#how-to-contribute) (still read through the prerequisites first).
 
 However, if you find an issue you think you can work on, then you should comment on the issue with a message like "Claiming this issue" given that nobody else has claimed it yet. Once you claim the issue, you are free to start developing (again, follow the [contribution guidelines](#how-to-contribute) first).
 
-**NOTE**: You may notice some issues have a **Related Issues** section on their description. Many components of this project have features that contain backend and frontend pieces. To add a layer of abstraction and separation-of-duties, related frontend and backend components are almost always separated into two different issues. For example, lets say you want to develop the Real-Time Chat System. You will likely notice that there are two issues that have Real-Time Chat in them, however, one is a the backend component and one is the frontend component. This is the case for many systems, as they have a backend system and a corresponding frontend response.
+If you are creating an issue, then follow the [issue structure](#issue-structure) instructions.
 
-In the case that you want to develop an issue that has a related issue, you can develop either both at the same time (make sure to claim both), or you can begin developing one and keep an eye on the other. What will happen is that you will run into a block in your ability to code any further until the other related component is complete. If you can complete your component, the person who is delegated to develop the corresponding component will keep an eye on the status of your issue and see whether it is opened or closed. If it is closed, then they know the component is complete and they can integrate their code with yours. If this is too confusing, please reach out for clarification, I understand that this methodology is a little complex and probably unorthodox.
+### Related Issues
+You may notice some issues have a **Related Issues** section on their description. Many components of this project have features that contain backend and frontend pieces. To add a layer of abstraction and separation-of-duties, related frontend and backend components are almost always separated into two different issues. For example, lets say you want to develop the Real-Time Chat System. You will likely notice that there are two issues that have Real-Time Chat in them, however, one is a the backend component and one is the frontend component. This is the case for many systems, as they have a backend system and a corresponding frontend response.
 
-If you are creating an issue, below are the steps to properly make one.
+If this is the case, you will want to do one of three things:
+
+1. Pick up both tickets and develop both features, backend and frontend, yourself. This is not recommended unless the overall feature is small.
+2. Develop what you can and wait for someone else to claim the other component, in which you can communicate with them the changes that you made so they are aware of what to implement and how. If someone has already claimed the other component, then you can communicate with them and see what they've done, and if you need to incorporate their modifications. Do note, when you incorporate the other persons changes/they incorporate yours, that does not mean copy the code. This will create issues when eventually merging both tickets. Instead, see what endpoints, variables, models, or classes are called and ONLY incorporate your respective portion (frontend or backend) of their code, which will be nonexistant on your machine.
+3. ...
+
+In the case that you want to develop an issue that has a related issue, you can develop either both at the same time (make sure to claim both), or you can begin developing one and keep an eye on the other. What will happen is that you will run into a block in your ability to code any further until the other related component is complete. If you can complete your component, the person who is delegated to develop the corresponding component will keep an eye on the status of your issue and see whether it is opened or closed. If it is closed, then they know the component is complete and they can integrate their code with yours.
+
+If this is too confusing, please reach out for clarification, I understand that this methodology is a little complex and probably unorthodox.
 
 ### Issue Structure
 Each issue should follow a general structure so it is clear what is being conveyed. The structure of the issue will vary depending on whether the issue is a bug or a feature (using proper [labels](#required-labels)). The structures are as follows,
